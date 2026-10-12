@@ -512,7 +512,6 @@ Isi video, berurutan:
    - Empat relasi kelas: asosiasi, agregasi, komposisi, dependensi. **Bedakan agregasi vs komposisi dengan menunjuk kode** (siapa yang membuat objeknya, dan di mana disimpan).
    - Inheritance: `Vehicle` dan tiga subclass.
    - Override vs overload: tunjuk `dailyRate()` dan `describe()`, lalu `extendRental` dan constructor `Truck`.
-   - Polymorphism lewat array parent: array `Vehicle[]` di `RentalShop`.
 3. **Demo langsung**: jalankan `mvn test`, lalu jalankan aplikasi dengan satu alur transaksi lengkap (tambah/daftar, sewa, lihat status, kembalikan) dan **satu kasus gagal**.
 4. **Jawab 3 pertanyaan teori dari bank soal**, satu dari setiap kategori. Dosen mengumumkan bank soal. Nomor soal ditentukan nomor absen (1 sampai 28), bukan NIM:
    - Soal 1 (Konsep dan enkapsulasi), nomor 1 sampai 4 = (bagian bulat dari (nomor absen - 1) / 4) mod 4, lalu + 1.
