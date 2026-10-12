@@ -45,7 +45,7 @@ Setiap **pelanggan** punya kartu rental (`RC-` diikuti ID pelanggan) dan boleh m
 
 ## Memulai
 
-1. Di GitHub, klik **Use this template**, lalu **Create a new repository**. Pilih **Private** dan ikuti arahan Dosen tentang siapa yang diundang (Classroom template).
+1. Buka https://github.com/dhanifudin/oop-rental, klik **Use this template**, lalu **Create a new repository**. Pilih **Private**, lalu undang akun GitHub Dosen (`dhanifudin`) sebagai collaborator (**Settings > Collaborators**).
 2. Clone repositori barumu. Commit dan push setiap selesai satu bagian.
 3. Buka tab **Actions**. Autograder berjalan di setiap push dan menampilkan nilai kodemu.
 
@@ -502,11 +502,11 @@ Tes yang harus lulus: `P08RentalShopTest` dan `P08RentalAppTest`. Lalu jalankan 
 
 ## Video Penjelasan (wajib)
 
-Rekam video **10 sampai 15 menit**, **wajah dan layar** terlihat. Unggah ke YouTube dengan visibilitas **Unlisted**, lalu tempel link di `video/LINK.md`. Rubrik video (dari dosen) dibagikan terpisah.
+Rekam video **minimal 10 menit, tanpa batas maksimal**, **wajah dan layar** terlihat. Unggah ke YouTube dengan visibilitas **Unlisted**, lalu tempel link di `video/LINK.md`. Rubrik video (dari dosen) dibagikan terpisah.
 
 Isi video, berurutan:
 
-1. **Intro (maksimal 1 menit)**: nama, NIM, varian (Varian A: Rental Kendaraan).
+1. **Intro**: nama, NIM, nomor absen, varian (Varian A: Rental Kendaraan).
 2. **Telusuri diagram vs kodemu**: tunjuk kodemu untuk setiap hal berikut.
    - Enkapsulasi: field `private`, validasi di setter, field tanpa setter.
    - Empat relasi kelas: asosiasi, agregasi, komposisi, dependensi. **Bedakan agregasi vs komposisi dengan menunjuk kode** (siapa yang membuat objeknya, dan di mana disimpan).
@@ -514,10 +514,12 @@ Isi video, berurutan:
    - Override vs overload: tunjuk `dailyRate()` dan `describe()`, lalu `extendRental` dan constructor `Truck`.
    - Polymorphism lewat array parent: array `Vehicle[]` di `RentalShop`.
 3. **Demo langsung**: jalankan `mvn test`, lalu jalankan aplikasi dengan satu alur transaksi lengkap (tambah/daftar, sewa, lihat status, kembalikan) dan **satu kasus gagal**.
-4. **Jawab 2 pertanyaan dari bank soal**. Dosen mengumumkan bank soal. Nomor soal ditentukan NIM:
-   - Soal 1 = (digit terakhir NIM) + 1, hasilnya 1 sampai 10.
-   - Soal 2 = ((dua digit terakhir NIM) mod 10) + 11, hasilnya 11 sampai 20.
-5. **Refleksi (maksimal 1 menit)**: apa yang paling sulit dan apa yang kamu pelajari.
+4. **Jawab 3 pertanyaan teori dari bank soal**, satu dari setiap kategori. Dosen mengumumkan bank soal. Nomor soal ditentukan nomor absen (1 sampai 28), bukan NIM:
+   - Soal 1 (Konsep dan enkapsulasi), nomor 1 sampai 4 = (bagian bulat dari (nomor absen - 1) / 4) mod 4, lalu + 1.
+   - Soal 2 (Relasi kelas), nomor 5 sampai 8 = ((nomor absen - 1) mod 4) + 5.
+   - Soal 3 (Inheritance, override, overload), nomor 9 sampai 14 = ((nomor absen - 1) mod 6) + 9.
+   - Contoh: nomor absen 28 memberi soal 3, 8, dan 12.
+5. **Refleksi**: apa yang paling sulit dan apa yang kamu pelajari.
 
 Video tidak ada, atau terbukti bukan kodemu, membuat nilai kode dikali 0,5.
 
@@ -525,7 +527,7 @@ Video tidak ada, atau terbukti bukan kodemu, membuat nilai kode dikali 0,5.
 
 Simpan di `laporan/Laporan_<NIM>_<Nama>.pdf`, contoh `laporan/Laporan_2441720001_Budi_Santoso.pdf`. Isi:
 
-1. **Identitas**: nama, NIM, kelas, link repositori GitHub, link video.
+1. **Identitas**: nama, NIM, nomor absen, kelas, link repositori GitHub, link video.
 2. **Hasil pengujian**: screenshot `mvn test` atau tab Actions yang menampilkan nilai.
 3. **Bukti WakaTime**: screenshot dashboard project `uts-a-rental` dan total jam dalam teks.
 4. **Refleksi**: konsep yang paling sulit dan rencana belajarmu.
