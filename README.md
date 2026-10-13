@@ -10,7 +10,7 @@ Aplikasi konsol rental kendaraan Polinema. Satu proyek, tujuh bagian (Pertemuan 
 - Pakai array biasa. Jangan pakai `List` atau `ArrayList`.
 - Jangan pakai `System.out.println` di `RentalShop` dan kelas model. Tampilan hanya di `Main` dan `RentalApp`.
 - Nyalakan WakaTime setiap kali mengerjakan (Langkah 0).
-- Kerjakan sendiri. Kode, video, dan laporan harus hasil kerjamu. Alat bantu (termasuk AI) boleh dipakai untuk bertanya konsep, tetapi wajib kamu tulis di laporan, dan kamu harus bisa menjelaskan setiap baris kodemu di video.
+- Kerjakan sendiri tanpa bantuan AI. Jangan memakai AI (chatbot, asisten kode, atau autocomplete berbasis AI) untuk menulis kode, menjawab soal, atau menyusun laporan. Kode, video, dan laporan harus hasil kerjamu, dan kamu menjelaskan kodemu langsung di video. Kode atau laporan salinan tidak dinilai.
 
 ## Langkah 0: Pasang WakaTime (wajib, sebelum menulis kode)
 
@@ -530,7 +530,7 @@ Simpan di `laporan/Laporan_<NIM>_<Nama>.pdf`, contoh `laporan/Laporan_2441720001
 2. **Hasil pengujian**: screenshot `mvn test` atau tab Actions yang menampilkan nilai.
 3. **Bukti WakaTime**: screenshot dashboard project `uts-a-rental` dan total jam dalam teks.
 4. **Refleksi**: konsep yang paling sulit dan rencana belajarmu.
-5. **Pernyataan kejujuran**: tulis alat bantu atau AI apa yang kamu pakai dan untuk apa, atau tulis bahwa kamu tidak memakai.
+5. **Pernyataan kejujuran**: tulis bahwa kode, video, dan laporan ini kamu kerjakan sendiri tanpa bantuan AI.
 
 Tulis dengan kata-katamu sendiri. Laporan atau kode salinan tidak dinilai.
 
@@ -547,6 +547,8 @@ Sebelum batas waktu, pastikan:
 Kirim link repositori sesuai arahan Dosen.
 
 ## Penilaian
+
+Polymorphism muncul sebagai konsep pengantar di studi kasus, tetapi tidak dinilai (tidak ada di tes, video, maupun bank soal).
 
 | Komponen | Bobot |
 |---|---|

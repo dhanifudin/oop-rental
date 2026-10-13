@@ -37,7 +37,7 @@ class P08RentalShopTest {
     }
 
     @Test
-    @DisplayName("addVehicle menerima Car, Motorcycle, dan Truck dalam satu array (polymorphism)")
+    @DisplayName("addVehicle menerima Car, Motorcycle, dan Truck dalam satu array")
     void mixedVehicles() throws Throwable {
         Object shop = shop();
         Car car = new Car("N 1 A", "Avanza", 2021);

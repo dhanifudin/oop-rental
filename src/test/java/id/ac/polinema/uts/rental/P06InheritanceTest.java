@@ -127,7 +127,7 @@ class P06InheritanceTest {
     }
 
     @Test
-    @DisplayName("Objek subclass bisa disimpan sebagai Vehicle (polymorphism)")
+    @DisplayName("Setiap subclass adalah turunan Vehicle (extends)")
     void isInstance() throws Throwable {
         Class<?> parent = R.cls("Vehicle");
         assertTrue(parent.isInstance(new Car("N 1 A", "Avanza", 2021)));
